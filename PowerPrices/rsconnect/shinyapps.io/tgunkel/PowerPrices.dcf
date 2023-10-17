@@ -1,0 +1,12 @@
+name: PowerPrices
+title: PowerPrices
+username: tgunkel
+account: tgunkel
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10221287
+bundleId: 7815278
+url: https://tgunkel.shinyapps.io/PowerPrices/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

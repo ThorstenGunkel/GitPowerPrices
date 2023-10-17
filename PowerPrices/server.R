@@ -15,13 +15,15 @@ function(input, output, session) {
     output$distPlot <- renderPlot({
 
         # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
+        #x    <- faithful[, 2]
+        x    <- df$Spot
+        
         bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
         # draw the histogram with the specified number of bins
         hist(x, breaks = bins, col = 'darkgray', border = 'white',
-             xlab = 'Waiting time to next eruption (in mins)',
-             main = 'Histogram of waiting times')
+             xlab = 'Hourly Day Ahead Power Price DE',
+             main = 'Histogram of Power Prices')
 
     })
 
